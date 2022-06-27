@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="./styles.css">
+        <title>CALCULATOR</title>
+    </head>
+    <body>
+
+
+        <div class=container>
+            <form name="form">
+                <div class id="display">  
+                    <input type="text" placeholher="0" name="display results"/>
+        </div>
+
+        <div class="buttons">
+            <div class="row">
+                <input type="button" name="b7" value="7">
+                <input type="button" name="b8" value="8">
+                <input type="button" name="b9" value="9">
+                <input type="button" name="addb" value="+"
+            </div>
+
+            <div class="row">
+                <input type="button" name="b4" value="4" onclick="calcnumbers(b4.value)">
+                <input type="button" name="b5" value="5" onclick="calcnumbers(b5.value)">
+                <input type="button"name="b6"value="6"onclick="calcnumbers(b6.value)">
+                <input type="button" name="subb" value="-" onclick="calcnumbers(subb.value)"
+              </div>
+
+            <div class="row">
+                <input type="button" name="b1" value="1" onclick="calcnumbers(b1.value)">
+                <input type="button" name="b2" value="2" onclick="calcnumbers(b2.value)">
+                <input type="button" name="b3" value="3" onclick="calcnumbers(b3.value)">
+                <input type="button" name="mulb" value="*" onclick="calcnumbers(mulb.value)"
+                
+            </div>
+
+            <div class="row">
+                <input type="button" name="b0" value="0" onclick="calcnumbers(b0.value)">
+                <input type="button" name="potb" value="." onclick="calcnumbers(potb.value)">
+                <input type="button" name="divb" value="/" onclick="calcnumbers(divb.value)">
+                <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+
+        
+            
+        </div>
+
+         </form>
+
+        </div>
+        <script src="./index.js"></script>
+    </body>
+
+
+</html>
